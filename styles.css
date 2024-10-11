@@ -1,0 +1,280 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./Background.jpg");
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  h1{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #00796b;
+    padding: 1.5em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 25px;
+  }
+  
+  .navbar a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #80cbc4;
+  }
+  
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.0em;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+    background: linear-gradient(135deg, #80cbc4 0%, #00796b 100%);
+    color: white;
+    height: 700px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: #00796b;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .cta-button:hover {
+    background-color: #e0f2f1;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .product-card {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .product-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #00796b;
+  }
+  
+  .product-card p {
+    font-family: 'Poppins', sans-serif;
+    color: #009688;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  .product-card button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00796b;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+    margin-top: 10px;
+  }
+  
+  .product-card button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Cart Page */
+  .cart-items {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .checkout-btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00796b;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #004d40;
+  }
+  
+  /* Add Product Form */
+  .add-product-form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 40px auto;
+  }
+  
+  .add-product-form input, .add-product-form button {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-product-form input {
+    background-color: #f4f4f9;
+  }
+  
+  .add-product-form button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-product-form button:hover {
+    background-color: #004d40;
+  }
+
+  
+  /* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-details {
+  display: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;           /* Fix the footer at the bottom of the page */
+  bottom: 0;                 /* Align to the bottom */
+  width: 100%;               /* Full width */
+  background-color: #00796b;     /* Background color of the footer */
+  opacity: 60%;
+  color: white;              /* Text color */
+  text-align: center;        /* Center the text horizontally */
+  padding: 10px 0;           /* Padding for spacing */
+  font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+  z-index: 1000;             /* Ensure it stays on top of other content */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+body {
+  margin-bottom: 60px; /* Ensure body content doesn't overlap with the footer */
+}

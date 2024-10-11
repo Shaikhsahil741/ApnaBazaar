@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna Bazaar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">APNA BAZAAR</a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="cart.html">CART</a></li>
+          <li><a href="add-product.html">SELL HERE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Add Your Product</h1>
+      <form class="add-product-form" onsubmit="addProduct(event)">
+        <input
+          type="text"
+          id="productName"
+          placeholder="Product Name"
+          required
+        />
+        <input
+          type="number"
+          id="productPrice"
+          placeholder="Price per unit"
+          required
+        />
+        <input type="file" id="productFile" required />
+        <button type="submit">Add Product</button>
+      </form>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-storage-compat.js"></script>
+    <script src="script.js"></script>
+
+    <footer>
+      <p>
+        &copy; 2024 Apna Bazaar. All rights reserved. Project by Bhakti Shinde &
+        Tasbiha Ahmed.
+      </p>
+    </footer>
+  </body>
+</html>
